@@ -2,9 +2,11 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import styles from '../../scss/Keyword.module.scss';
 
-function What({ title }) {
+function What({ sendKeyword }) {
   const [keyword, setKeyword] = useState();
   const apiUrl = `http://localhost:4000/api/what`;
+
+  sendKeyword(keyword)
 
   useEffect(() => {
     axios.get(apiUrl)

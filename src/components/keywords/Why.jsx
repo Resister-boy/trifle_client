@@ -2,9 +2,11 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import styles from '../../scss/Keyword.module.scss';
 
-function Why({ title }) {
+function Why({ sendKeyword }) {
   const [keyword, setKeyword] = useState();
   const apiUrl = `http://localhost:4000/api/why`;
+
+  sendKeyword(keyword)
 
   useEffect(() => {
     axios.get(apiUrl)

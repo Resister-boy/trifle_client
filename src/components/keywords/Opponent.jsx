@@ -2,9 +2,11 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import styles from '../../scss/Keyword.module.scss';
 
-function Opponent({ title }) {
+function Opponent({ sendKeyword }) {
   const [keyword, setKeyword] = useState();
   const apiUrl = `http://localhost:4000/api/opponent`;
+
+  sendKeyword(keyword)
 
   useEffect(() => {
     axios.get(apiUrl)

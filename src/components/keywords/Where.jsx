@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react'
 import styles from '../../scss/Keyword.module.scss';
 
 
-function Where({ title }) {
+function Where({ sendKeyword }) {
   const [keyword, setKeyword] = useState();
   const apiUrl = `http://localhost:4000/api/where`;
+
+  sendKeyword(keyword)
 
   useEffect(() => {
     axios.get(apiUrl)

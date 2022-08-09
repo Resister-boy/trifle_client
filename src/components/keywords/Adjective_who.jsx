@@ -2,13 +2,12 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import styles from '../../scss/Keyword.module.scss';
 
-function Adjective_who({ title }) {
+function Adjective_who({ sendKeyword }) {  
+
   const [keyword, getKeyword] = useState();
   const apiUrl = `http://localhost:4000/api/adjective_who`;
 
-  // const randomNumber = () => {
-    
-  // }
+  sendKeyword(keyword)
 
   useEffect(() => {
     axios.get(apiUrl)

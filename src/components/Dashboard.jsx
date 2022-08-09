@@ -10,17 +10,42 @@ import Who from './keywords/Who';
 import Why from './keywords/Why';
 
 function Dashboard() {
+  const getAdW  = (keyword) => {
+    console.log('Adjective Who', keyword)  
+  };
+  const getAdO  = (keyword) => {
+    console.log('Adjective Opponent', keyword)  
+  };
+  const getHow  = (keyword) => {
+    console.log('How', keyword)  
+  };
+  const getWhy = (keyword) => {
+    console.log('Why', keyword)  
+  };
+  const getWho  = (keyword) => {
+    console.log('Who', keyword)  
+  };
+  const getWhat  = (keyword) => {
+    console.log('What', keyword)  
+  };
+  const getWhere  = (keyword) => {
+    console.log('Where', keyword)  
+  };
+  const getOpponent  = (keyword) => {
+    console.log('Opponent', keyword)  
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
-        <AdjectiveWho title="Adjective_who" />
-        <Who title="Who" />
-        <Where title="Where" />
-        <What title="What" />
-        <AdjectiveOpponent title="Adjective_opponent" />
-        <Opponent title="Opponent" />
-        <Why title="Why" />
-        <How title="How" />
+        <AdjectiveWho sendKeyword={getAdW}/>
+        <Who sendKeyword={getWho} />
+        <Where sendKeyword={getWhere}/>
+        <What sendKeyword={getWhat} />
+        <AdjectiveOpponent sendKeyword={getAdO}/>
+        <Opponent sendKeyword={getOpponent} />
+        <Why sendKeyword={getWhy} />
+        <How sendKeyword={getHow} />
       </div>
     </div>
   )
