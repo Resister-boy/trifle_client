@@ -4,8 +4,7 @@ import store from '../redux/store';
 // import store from '../redux/store';
 
 function WebSearch() {
-
-  // console.log('From WebSearch', store.getState())
+  console.log('Drom WebSearch', store.getState())
 
   const REACT_APP_CUSTOM_SEARCH = "AIzaSyAfXdAzr8F1Eu5Z4bXPLCYF7LsODY-1tiM"
   const apiUrl = `https://customsearch.googleapis.com/customsearch/v1?key=${REACT_APP_CUSTOM_SEARCH}&cx=07986711742b84d6e&q=${'바보'}`;

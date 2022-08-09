@@ -9,6 +9,7 @@ function Adjective_who({ sendKeyword }) {
 
   sendKeyword(keyword)
 
+
   useEffect(() => {
     axios.get(apiUrl)
       .then((response) => {
