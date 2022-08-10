@@ -21,7 +21,7 @@ function Who({ sendKeyword }) {
 
   return (
     <div className={styles.container}>
-      <span className={styles.who}>{keyword}</span>
+      <span className={styles.who + styles.keyword}>{keyword}</span>
     </div>
   )
 }

@@ -22,7 +22,7 @@ function Where({ sendKeyword }) {
 
   return (
     <div className={styles.container}>
-      <span className={styles.where}>{keyword}</span>
+      <span className={styles.where + styles.keyword}>{keyword}</span>
     </div>
   )
 }

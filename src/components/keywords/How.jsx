@@ -20,7 +20,7 @@ function How({ sendKeyword }) {
   }, [])
   return (
     <div className={styles.container}>
-      <span className={styles.how}>{keyword}하는 이야기</span>
+      <span className={styles.how + styles.keyword}>{keyword}하는 이야기</span>
     </div>
   )
 }

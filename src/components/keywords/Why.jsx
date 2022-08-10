@@ -21,7 +21,7 @@ function Why({ sendKeyword }) {
 
   return (
     <div className={styles.container}>
-      <span className={styles.why}>{keyword}</span>
+      <span className={styles.why + styles.keyword}>{keyword}</span>
     </div>
   )
 }

@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  height: 63vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    text-align: center;
+    .title {
+      color: #FFD600;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 120px;
+      font-weight: 600;
+    }
+    .subTitle {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 80px;
+      font-weight: 600;
+    }
+  }
+}

@@ -21,7 +21,7 @@ function What({ sendKeyword }) {
 
   return (
     <div className={styles.container}>
-      <span className={styles.what}>{keyword}</span>
+      <span className={styles.what + styles.keyword}>{keyword}</span>
     </div>
   )
 }

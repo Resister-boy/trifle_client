@@ -5,11 +5,14 @@ function Notification() {
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
+      <div className={styles.background_inner}></div>
+      <div className={styles.text_container}>
         <ol>
           <li>글감 찾기 버튼을 눌러 랜덤 글감을 찾을 수 있습니다</li>
           <li>마음에 드는 글감이 나올 때까지 계속해서 버튼을 눌러보세요</li>
           <li>마음에 드는 글감이 나오면 꼭 저장 버튼을 눌러주세요</li>
         </ol>
+      </div>
       </div>
     </div>
   )

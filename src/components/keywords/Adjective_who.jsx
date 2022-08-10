@@ -23,7 +23,7 @@ function Adjective_who({ sendKeyword }) {
 
   return (
     <div className={styles.container}>
-      <span className={styles.adjective_who}>{keyword}</span>
+      <span className={styles.adjective_who + styles.keyword}>{keyword}</span>
     </div>
   )
 }

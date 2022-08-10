@@ -20,7 +20,7 @@ function Opponent({ sendKeyword }) {
   }, [])
   return (
     <div className={styles.container}>
-      <span className={styles.opponent}>{keyword}</span>
+      <span className={styles.opponent + styles.keyword}>{keyword}</span>
     </div>
   )
 }

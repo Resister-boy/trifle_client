@@ -1,6 +1,10 @@
 .container {
   color: #fff;
   font-size: 18px;
+  span {
+    color: #FFD600;
+    font-size: 16px;
+  }
   .adjective_who {
     opacity: 0;
     animation-name: typing; 
