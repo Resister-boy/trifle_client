@@ -9,7 +9,7 @@ function GenreList() {
   useEffect(() => {
     axios.get(apiUrl)
       .then(response => {
-        console.log(response.data)
+        // console.log(response.data)
         setGenres(response.data);
       })
       .catch((error) => {

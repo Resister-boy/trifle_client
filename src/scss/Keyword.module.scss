@@ -1,96 +1,28 @@
 .container {
   color: #fff;
   font-size: 18px;
+  overflow: hidden;
   span {
+    position: relative;
     color: #FFD600;
     font-size: 16px;
-  }
-  .adjective_who {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: .3s;
-  }
-
-  .who {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: .5s;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 80%;
+      left: 0;
+      width: 100%;
+      padding-top: 6px;
+      background-color: #333;
+      border-left: 2px solid #FFD600;
+      animation: typing 2s steps(10) forwards;
+    }
   }
 
-  .where {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: 1.5s;
-  }
-
-  .what {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: 1.9s;
-  }
-
-  .adjective_opponent {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: 2.3s;
-  }
-
-  .opponent {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: 2.7s;
-  }
-
-  .why {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: 3.7s;
-  }
-
-  .how {
-    opacity: 0;
-    animation-name: typing; 
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
-    animation-delay: 3.9s;
-  }
-  
   @keyframes typing {
-      from {
-        opacity:0;
-      }
-      to {
-        opacity:1;
+      100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
       }
   }
 }
