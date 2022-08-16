@@ -1,14 +1,48 @@
 .container {
   width: 100%;
-  height: 200px;
+  height: auto;
   .inner {
     width: 100%;
-    height: 100%;
+    height: 200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #333;
+
+    .sentence_container {
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 80%;
+        left: 0;
+        width: 100%;
+        padding-top: 6px;
+        background-color: #333;
+        border-left: 2px solid #FFD600;
+        animation: typing 2s steps(30) forwards;
+      }
+
+      .sentence {
+        font-size: 25px;
+        color: #FFD600;
+      }
+      .notification {
+        color: #ccc;  
+        animation: none;
+      }
+    }
+
+    @keyframes typing {
+      100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+      }
+    }
+    
   }
   .button_container {
     width: 100%;
@@ -34,3 +68,4 @@
 
   }
 }
+
