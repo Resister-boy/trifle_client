@@ -7,17 +7,25 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    .title {
-      font-size: 18px;
-      margin-right: 15px;
+    justify-content: space-around;
+    .genre_container {
+      .title {
+        font-size: 18px;
+        margin-right: 15px;
+      }
+      select {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: 2px solid #FFD600;
+        outline: none;
+      }
     }
-    select {
-      width: 100px;
-      height: 30px;
+    .selectedGenre {
+      color: #fff;
+      background-color: #ccc;
+      padding: 5px 15px;
       border-radius: 10px;
-      border: 2px solid #FFD600;
-      outline: none;
     }
   }
 }

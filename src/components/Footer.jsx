@@ -6,7 +6,7 @@ function Footer() {
     <div className={styles.container}>
       <div>
         <div className={styles.logo}>Trifle</div>
-        <div className={styles.copyright}>ⓒ{ new Date().getFullYear() } Trifle.com</div>
+        <div className={styles.copyright}>ⓒ{ new Date().getFullYear() }   Trifle.com</div>
       </div>
     </div>
   )

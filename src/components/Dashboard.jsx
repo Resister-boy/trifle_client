@@ -4,6 +4,7 @@ import { getKeywords } from '../context/KeywordContext';
 import { useKeywordState, useKeywordDispatch } from '../context/KeywordContext';
 import styles from '../scss/Dashboard.module.scss';
 import { CUSTOM_SEARCH_API_KEY, SEARCH_ENGINE_ID } from "../data/data";
+import GenreList from './GenreList';
 
 function Dashboard() {
   const state = useKeywordState();
@@ -36,10 +37,11 @@ function Dashboard() {
 
   return (
     <div className={styles.container}>
+      <GenreList />
       <div className={styles.inner}>
         <div className={styles.sentence_container}>
           {keywords 
-            ? <span className={styles.sentence}>{keywords.join().replace(/,/g, " ")}하는 이야기</span>
+            ? <span className={styles.sentence}>{keywords.join().replace(/,/g, " ")} 이야기</span>
             : <span className={styles.notification}>글감 찾기 버튼을 눌러 여러분의 글감을 찾아보세요!</span> }
         </div>
       </div>
